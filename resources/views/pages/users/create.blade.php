@@ -90,10 +90,24 @@
                                             checked="">
                                         <span class="selectgroup-button">Admin</span>
                                     </label>
+<<<<<<< HEAD
                                     {{-- <label class="selectgroup-item">
                                         <input type="radio" name="roles" value="STAFF" class="selectgroup-input">
                                         <span class="selectgroup-button">Staff</span>
                                     </label> --}}
+=======
+<<<<<<< HEAD
+                                    <label class="selectgroup-item">
+                                        <input type="radio" name="roles" value="STAFF" class="selectgroup-input">
+                                        <span class="selectgroup-button">Staff</span>
+                                    </label>
+=======
+                                    {{-- <label class="selectgroup-item">
+                                        <input type="radio" name="roles" value="STAFF" class="selectgroup-input">
+                                        <span class="selectgroup-button">Staff</span>
+                                    </label> --}}
+>>>>>>> 20e0ab3 (edit UI dan logo)
+>>>>>>> 10e2fed (edit UI dan logo)
                                     <label class="selectgroup-item">
                                         <input type="radio" name="roles" value="USER" class="selectgroup-input">
                                         <span class="selectgroup-button">User</span>

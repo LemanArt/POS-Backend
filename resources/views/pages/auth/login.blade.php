@@ -60,9 +60,21 @@
         </div>
     </div>
 
+<<<<<<< HEAD
     {{-- <div class="text-muted mt-5 text-center">
         Don't have an account? <a href="{{ route('register') }}">Create One</a>
     </div> --}}
+=======
+<<<<<<< HEAD
+    <div class="text-muted mt-5 text-center">
+        Don't have an account? <a href="{{ route('register') }}">Create One</a>
+    </div>
+=======
+    {{-- <div class="text-muted mt-5 text-center">
+        Don't have an account? <a href="{{ route('register') }}">Create One</a>
+    </div> --}}
+>>>>>>> 20e0ab3 (edit UI dan logo)
+>>>>>>> 10e2fed (edit UI dan logo)
 @endsection
 
 @push('scripts')

@@ -16,6 +16,7 @@
                 <a href="#" class="dropdown-item has-icon text-success">
                     <i class="fa-solid fa-user"></i> {{ auth()->user()->name }} ({{ auth()->user()->roles }})
                 </a>
+
                 <a href="#" class="dropdown-item has-icon text-danger"
                     onclick="event.preventDefault(); document.getElementById('logout-form').submit()">
                     <i class="fas fa-sign-out-alt"></i> Logout
