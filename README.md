@@ -5,7 +5,6 @@ Ini adalah backend sistem Point of Sale (POS) berbasis Laravel. Project ini menc
 ---
 
 ## 🔗 Demo
-Jika tersedia, bisa diakses di: [https://pos-backend.example.com](#)  
 
 ---
 
