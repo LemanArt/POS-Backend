@@ -18,11 +18,9 @@
                 @csrf
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email"
-                        class="form-control @error('email')
+                    <input id="email" type="email" class="form-control @error('email')
                         is-invalid
-                    @enderror"
-                        name="email" tabindex="1" autofocus>
+                    @enderror" name="email" tabindex="1" autofocus>
                     @error('email')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -36,15 +34,13 @@
                         <label for="password" class="control-label">Password</label>
 
                     </div>
-                    <input id="password" type="password"
-                        class="form-control @error('password')
+                    <input id="password" type="password" class="form-control @error('password')
                         is-invalid
-                    @enderror"
-                        name="password" tabindex="2">
+                    @enderror" name="password" tabindex="2">
                     @error('password')
                         <div class="invalid-feedback">
                             {{ $message }}
-                        @enderror
+                    @enderror
 
                     </div>
 
@@ -59,22 +55,9 @@
 
         </div>
     </div>
-
-<<<<<<< HEAD
-    {{-- <div class="text-muted mt-5 text-center">
-        Don't have an account? <a href="{{ route('register') }}">Create One</a>
-    </div> --}}
-=======
-<<<<<<< HEAD
     <div class="text-muted mt-5 text-center">
         Don't have an account? <a href="{{ route('register') }}">Create One</a>
     </div>
-=======
-    {{-- <div class="text-muted mt-5 text-center">
-        Don't have an account? <a href="{{ route('register') }}">Create One</a>
-    </div> --}}
->>>>>>> 20e0ab3 (edit UI dan logo)
->>>>>>> 10e2fed (edit UI dan logo)
 @endsection
 
 @push('scripts')
