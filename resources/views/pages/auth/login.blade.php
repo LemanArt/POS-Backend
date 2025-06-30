@@ -18,11 +18,9 @@
                 @csrf
                 <div class="form-group">
                     <label for="email">Email</label>
-                    <input id="email" type="email"
-                        class="form-control @error('email')
+                    <input id="email" type="email" class="form-control @error('email')
                         is-invalid
-                    @enderror"
-                        name="email" tabindex="1" autofocus>
+                    @enderror" name="email" tabindex="1" autofocus>
                     @error('email')
                         <div class="invalid-feedback">
                             {{ $message }}
@@ -36,15 +34,13 @@
                         <label for="password" class="control-label">Password</label>
 
                     </div>
-                    <input id="password" type="password"
-                        class="form-control @error('password')
+                    <input id="password" type="password" class="form-control @error('password')
                         is-invalid
-                    @enderror"
-                        name="password" tabindex="2">
+                    @enderror" name="password" tabindex="2">
                     @error('password')
                         <div class="invalid-feedback">
                             {{ $message }}
-                        @enderror
+                    @enderror
 
                     </div>
 

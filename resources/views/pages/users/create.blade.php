@@ -34,11 +34,9 @@
                         <div class="card-body">
                             <div class="form-group">
                                 <label>Name</label>
-                                <input type="text"
-                                    class="form-control @error('name')
-                                is-invalid
-                            @enderror"
-                                    name="name">
+                                <input type="text" class="form-control @error('name')
+                                    is-invalid
+                                @enderror" name="name">
                                 @error('name')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -47,11 +45,9 @@
                             </div>
                             <div class="form-group">
                                 <label>Email</label>
-                                <input type="email"
-                                    class="form-control @error('email')
-                                is-invalid
-                            @enderror"
-                                    name="email">
+                                <input type="email" class="form-control @error('email')
+                                    is-invalid
+                                @enderror" name="email">
                                 @error('email')
                                     <div class="invalid-feedback">
                                         {{ $message }}
@@ -66,11 +62,9 @@
                                             <i class="fas fa-lock"></i>
                                         </div>
                                     </div>
-                                    <input type="password"
-                                        class="form-control @error('password')
-                                is-invalid
-                            @enderror"
-                                        name="password">
+                                    <input type="password" class="form-control @error('password')
+                                        is-invalid
+                                    @enderror" name="password">
                                 </div>
                                 @error('password')
                                     <div class="invalid-feedback">
@@ -86,28 +80,21 @@
                                 <label class="form-label">Roles</label>
                                 <div class="selectgroup w-100">
                                     <label class="selectgroup-item">
-                                        <input type="radio" name="roles" value="ADMIN" class="selectgroup-input"
-                                            checked="">
+                                        <input type="radio" name="roles" value="ADMIN" class="selectgroup-input" checked="">
                                         <span class="selectgroup-button">Admin</span>
                                     </label>
-<<<<<<< HEAD
                                     {{-- <label class="selectgroup-item">
                                         <input type="radio" name="roles" value="STAFF" class="selectgroup-input">
                                         <span class="selectgroup-button">Staff</span>
                                     </label> --}}
-=======
-<<<<<<< HEAD
                                     <label class="selectgroup-item">
                                         <input type="radio" name="roles" value="STAFF" class="selectgroup-input">
                                         <span class="selectgroup-button">Staff</span>
                                     </label>
-=======
                                     {{-- <label class="selectgroup-item">
                                         <input type="radio" name="roles" value="STAFF" class="selectgroup-input">
                                         <span class="selectgroup-button">Staff</span>
                                     </label> --}}
->>>>>>> 20e0ab3 (edit UI dan logo)
->>>>>>> 10e2fed (edit UI dan logo)
                                     <label class="selectgroup-item">
                                         <input type="radio" name="roles" value="USER" class="selectgroup-input">
                                         <span class="selectgroup-button">User</span>
