@@ -117,8 +117,6 @@
                         </div>
                     </div>
                 </div>
-                <!-- Akhir bagian untuk menampilkan produk yang terjual -->
-                <!-- Tambahkan bagian untuk menampilkan grafik produk yang terjual -->
                 <div class="col-lg-6 col-md-12 col-12">
                     <div class="card">
                         <div class="card-header">
@@ -129,7 +127,7 @@
                         </div>
                     </div>
                 </div>
-                <!-- Akhir bagian untuk menampilkan grafik produk yang terjual -->
+
             </div>
         </section>
     </div>

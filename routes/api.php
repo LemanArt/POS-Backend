@@ -2,30 +2,29 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
-
-/*
-|--------------------------------------------------------------------------
-| API Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register API routes for your application. These
-| routes are loaded by the RouteServiceProvider and all of them will
-| be assigned to the "api" middleware group. Make something great!
-|
-*/
+use App\Http\Controllers\Api\AuthController;
+use App\Http\Controllers\Api\ProductController;
+use App\Http\Controllers\Api\OrderController;
+use App\Http\Controllers\Api\UserController;
 
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-// post login
-Route::post('login', [\App\Http\Controllers\Api\AuthController::class, 'login']);
+// === AUTH ===
+Route::post('/login', [AuthController::class, 'login']);
+Route::post('/logout', [AuthController::class, 'logout'])->middleware('auth:sanctum');
 
-// post logout
-Route::post('logout', [\App\Http\Controllers\Api\AuthController::class, 'logout'])->middleware('auth:sanctum');
+// === PROTECTED ROUTES ===
+Route::middleware('auth:sanctum')->group(function () {
 
-// api resource product
-Route::apiResource('products', \App\Http\Controllers\Api\ProductController::class)->middleware('auth:sanctum');
+    // === PRODUCT CRUD ===
+    Route::apiResource('/products', ProductController::class);
 
-// api resource order
-Route::apiResource('orders', \App\Http\Controllers\Api\OrderController::class)->middleware('auth:sanctum');
+    // === ORDER CRUD ===
+    Route::apiResource('/orders', OrderController::class);
+
+    // === USER CRUD ===
+    Route::apiResource('/users', UserController::class);
+
+});
