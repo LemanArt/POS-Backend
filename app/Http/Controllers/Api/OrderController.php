@@ -4,10 +4,25 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Models\Order;
+use Illuminate\Support\Carbon;
 
 class OrderController extends Controller
 {
     //store order and order item
+    public function index(Request $request)
+    {
+        $orders = Order::with(['orderItems.product', 'kasir']);
+
+        if ($request->has('start_date') && $request->has('end_date')) {
+            $start = Carbon::parse($request->start_date)->startOfDay(); // jam 00:00:00
+            $end = Carbon::parse($request->end_date)->endOfDay();       // jam 23:59:59
+
+            $orders->whereBetween('transaction_time', [$start, $end]);
+        }
+
+        return response()->json($orders->get());
+    }
     public function store(Request $request)
     {
         $request->validate([
